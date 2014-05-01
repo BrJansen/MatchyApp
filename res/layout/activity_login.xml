@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".LoginActivity" >
+
+    <ImageView
+        android:id="@+id/logoInlog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/CDescLogo"
+        android:scaleType="fitXY"
+        android:src="@drawable/logo_inlog" />
+
+    <TextView
+        android:id="@+id/loginHelpText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/text_view_profile_style"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:text="@string/loginhelptext"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:id="@+id/layoutLoginPref"
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:layout_below="@+id/loginHelpText"
+        android:layout_centerHorizontal="true" >
+
+        <LinearLayout
+            android:id="@+id/userNameLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:gravity="center"
+                android:text="@string/username"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/password"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/passwordLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/userNameLayout"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/userNameInsert"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:inputType="textVisiblePassword"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" 
+                />
+
+            <EditText
+                android:id="@+id/passwordInsert"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:inputType="textPassword"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/saveLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/passwordLayout"
+            android:layout_centerHorizontal="true"
+            android:text="@string/saveLogin"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@id/saveLogin"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="@string/login"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/matchTitleLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:weightSum="1.0" >
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            android:weightSum="1.0" >
+
+            <TextView
+                android:id="@+id/matchTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_weight="0.5"
+                android:focusable="false"
+                android:text="Match Title"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/matchType"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_weight="0.5"
+                android:focusable="false"
+                android:text="Match Type"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            android:weightSum="1.0" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="0.5"
+                android:weightSum="1.0" >
+
+                <TextView
+                    android:id="@+id/matchDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.3"
+                    android:focusable="false"
+                    android:text="Match Date"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="0.5"
+                android:weightSum="1.0" >
+
+                <TextView
+                    android:id="@+id/matchPlace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.7"
+                    android:focusable="false"
+                    android:text="Match Place"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="0.5"
+                android:weightSum="1.0" >
+
+                <TextView
+                    android:id="@+id/matchEducation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.3"
+                    android:focusable="false"
+                    android:text="Match Education"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="0.5"
+                android:weightSum="1.0" >
+
+                <TextView
+                    android:id="@+id/matchWorkTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.7"
+                    android:focusable="false"
+                    android:text="Match Work Date"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/scoreLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/matchTitleLayout"
+        android:layout_below="@+id/matchTitleLayout" >
+
+        <ImageView
+            android:id="@+id/rankingEmblem"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:focusable="false"
+            android:src="@drawable/ranking" />
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignBottom="@+id/rankingEmblem"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/matchDescription"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/scoreLayout"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/scoreLayout"
+        android:focusable="false"
+        android:singleLine="false"
+        android:text="Match Description"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+</RelativeLayout>

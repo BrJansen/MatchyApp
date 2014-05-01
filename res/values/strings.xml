@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Text View strings -->
+    <!-- Login Screen -->
+    <string name="app_name">Matchy</string>
+    <string name="loginhelptext">Log in met uw gebruikersgegevens of registreer een nieuw account op de Matchy website!</string>
+    <string name="username">Gebruikersnaam</string>
+    <string name="password">Wachtwoord</string>
+    <string name="saveLogin">Onthoud logingegevens</string>
+    
+    <!-- Menu Screen -->
+    <string name="login">Login</string>
+    <string name="homeButton">Home</string>
+    <string name="profileButton">Profiel</string>
+    <string name="matchButton">Matches</string>
+    <string name="searchButton">Zoeken</string>
+    <string name="logoutButton">Log uit</string>
+    
+    <!-- Main Screen -->
+    <string name="mainScreenTitle">Al uw matches!</string>
+    <string name="seeMatches">Bekijk al uw matches</string>
+    <string name="mainScreenSearch">Zoek naar uw perfecte match!</string>
+    <string name="profileAdvanced">Bekijk uw profiel!</string>
+    <string name="back">Terug</string>
+    <string name="searchTitle">Zoek naar uw perfecte matches</string>
+    <string name="searchSubTitle">Selecteer uw gewenste critiria en klik op \'Zoeken\'</string>
+    <string name="spinnerTemplate">--Selecteer uw branch--</string>
+
+    <!-- Search Screen -->
+    <string name="searchTerm">Zoekterm</string>
+    <string name="searchCompany">Fulltime/Parttime</string>
+    <string name="searchDate">Datum</string>
+    <string name="searchPlace">Plaats</string>
+    <string name="searchEducation">Opleidingsniveau</string>
+    
+    <!-- Search Result Screen -->
+    <string name="searchResultTitle">Zoekresultaten</string>
+    <string name="searchAgain">Opnieuw zoeken</string>
+    
+    <!-- Profile Screen -->
+    <string name="eduNavTo">Volgende pagina (Opleidingsgeschiedenis)</string>
+    <string name="workNavTo">Volgende pagina (Werkervaring)</string>
+    <string name="name">Naam:</string>
+    <string name="age">Leeftijd:</string>
+    <string name="sex">Geslacht:</string>
+    <string name="province">Provincie</string>
+    <string name="city">Stad:</string>
+    <string name="skills">Vaardigheden:</string>
+    <string name="discipline">Discipline:</string>
+    <string name="eMail">Email:</string>
+    <string name="companyName">Bedrijfsnaam:</string>
+    <string name="telephone">Tel. Nummer:</string>
+    <string name="userNavTo">Terug naar de eerste pagina</string>
+    
+    <!-- Match Detail Screen -->
+    <string name="matchDate">Datum:</string>
+    <string name="matchPlace">Plaats:</string>
+    <string name="matchEdu">Opleiding:</string>
+    <string name="matchWorkTime">Full of Parttime:</string>
+    
+    <!-- Content Descriptions -->
+    <string name="CDescLogo">Logo Matchy</string>
+    <string name="title_activity_call_soap">CallSoapActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <!-- JavaCode Strings -->
+    <string name="_errorConnection">Fout met verbinden naar de server, probeer het later nog eens</string>
+    <string name="_falseLogin">Foutieve inloggegevens ingevoerd, probeer opnieuw</string>
+    <string name="_falseEmail">Voer aub een valide email in!</string>
+    <string name="_noSearchTerms">Voer minimaal 1 zoekterm in</string>
+    <string name="_noResult">Geen resultaten gevonden, zoek opnieuw</string>
+</resources>
